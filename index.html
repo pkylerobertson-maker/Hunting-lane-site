@@ -34,7 +34,7 @@
       margin: auto;
     }
 
-    h1, h2, h3 {
+    h1, h2 {
       color: #9acd32;
       margin-top: 0;
     }
@@ -46,21 +46,37 @@
       border-radius: 10px;
     }
 
-    .service-link {
-      display: block;
+    .accordion-item {
       background: #1c2e1c;
-      padding: 18px 20px;
       margin: 15px 0;
       border-radius: 10px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 20px;
+      overflow: hidden;
       border: 1px solid #2d4a2d;
     }
 
-    .service-link:hover {
-      background: #284428;
+    .accordion-button {
+      width: 100%;
+      background: #1c2e1c;
+      color: #9acd32;
+      border: none;
+      padding: 20px;
+      text-align: left;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .accordion-button:hover {
+      background: #254025;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 0 20px 20px 20px;
+    }
+
+    .accordion-content p {
+      margin: 0 0 15px 0;
     }
 
     footer {
@@ -85,74 +101,69 @@
 
   <section>
     <h2>Services</h2>
-    <p>Tap a service below to jump down and read more about what we do.</p>
+    <p>Tap a service below to open more details.</p>
 
-    <a class="service-link" href="#hunting-lane-clearing">Hunting Lane Clearing</a>
-    <a class="service-link" href="#shooting-lanes">Shooting Lanes</a>
-    <a class="service-link" href="#brush-clearing">Brush Clearing</a>
-    <a class="service-link" href="#feeder-blind-access">Feeder &amp; Blind Access</a>
-  </section>
-
-  <section id="hunting-lane-clearing">
-    <div class="card">
-      <h3>Hunting Lane Clearing</h3>
-      <p>
-        Hunting lane clearing is focused on opening up travel routes and sight lines through heavy brush,
-        timber, and overgrowth so your property is easier to hunt and manage. We clear lanes for foot access,
-        ATV or side-by-side use, and better overall movement through the land.
-      </p>
-      <p>
-        This service helps landowners create cleaner, more usable paths to blinds, stands, feeders, and key
-        areas of the property. It can also improve visibility, reduce thick underbrush, and make the land more
-        hunt-ready without completely changing the natural look of the property.
-      </p>
+    <div class="accordion-item">
+      <button class="accordion-button">Hunting Lane Clearing</button>
+      <div class="accordion-content">
+        <p>
+          Hunting lane clearing is focused on opening up travel routes and sight lines through heavy brush,
+          timber, and overgrowth so your property is easier to hunt and manage. We clear lanes for foot access,
+          ATV or side-by-side use, and better overall movement through the land.
+        </p>
+        <p>
+          This service helps landowners create cleaner, more usable paths to blinds, stands, feeders, and key
+          areas of the property. It can also improve visibility, reduce thick underbrush, and make the land more
+          hunt-ready without completely changing the natural look of the property.
+        </p>
+      </div>
     </div>
-  </section>
 
-  <section id="shooting-lanes">
-    <div class="card">
-      <h3>Shooting Lanes</h3>
-      <p>
-        Shooting lanes are cleared with visibility and safe shot opportunities in mind. We open up narrow or
-        wide lanes based on your setup so you can see more clearly from blinds, stands, and other hunting spots.
-      </p>
-      <p>
-        This service is useful when brush, saplings, limbs, and low growth block your line of sight. We help
-        create cleaner windows and more dependable shot paths, while keeping the surrounding cover as natural
-        as possible. The goal is to improve your hunting setup and make every stand location more effective.
-      </p>
+    <div class="accordion-item">
+      <button class="accordion-button">Shooting Lanes</button>
+      <div class="accordion-content">
+        <p>
+          Shooting lanes are cleared with visibility and safe shot opportunities in mind. We open up narrow or
+          wide lanes based on your setup so you can see more clearly from blinds, stands, and other hunting spots.
+        </p>
+        <p>
+          This service is useful when brush, saplings, limbs, and low growth block your line of sight. We help
+          create cleaner windows and more dependable shot paths, while keeping the surrounding cover as natural
+          as possible. The goal is to improve your hunting setup and make every stand location more effective.
+        </p>
+      </div>
     </div>
-  </section>
 
-  <section id="brush-clearing">
-    <div class="card">
-      <h3>Brush Clearing</h3>
-      <p>
-        Brush clearing is for areas that have gotten too thick to move through easily or use effectively.
-        We cut back overgrowth, remove unwanted brush, and open up problem areas so the property is easier
-        to maintain and more functional.
-      </p>
-      <p>
-        This can include clearing fence lines, opening up trails, cleaning around roads and access points,
-        and removing dense vegetation that limits use of the land. Brush clearing helps improve access,
-        appearance, and usability for both hunting and general property maintenance.
-      </p>
+    <div class="accordion-item">
+      <button class="accordion-button">Brush Clearing</button>
+      <div class="accordion-content">
+        <p>
+          Brush clearing is for areas that have gotten too thick to move through easily or use effectively.
+          We cut back overgrowth, remove unwanted brush, and open up problem areas so the property is easier
+          to maintain and more functional.
+        </p>
+        <p>
+          This can include clearing fence lines, opening up trails, cleaning around roads and access points,
+          and removing dense vegetation that limits use of the land. Brush clearing helps improve access,
+          appearance, and usability for both hunting and general property maintenance.
+        </p>
+      </div>
     </div>
-  </section>
 
-  <section id="feeder-blind-access">
-    <div class="card">
-      <h3>Feeder &amp; Blind Access</h3>
-      <p>
-        Feeder and blind access work is designed to make it easier to get to and maintain your hunting setup.
-        We clear pathways and surrounding areas so you can safely reach feeders, blinds, and stand locations
-        without fighting thick brush every time you go in.
-      </p>
-      <p>
-        This service is especially useful for landowners who want smoother routes for refilling feeders,
-        checking cameras, getting equipment in and out, or just creating a cleaner, quieter way to approach
-        their hunting areas. Better access means less hassle and a more dependable setup all season long.
-      </p>
+    <div class="accordion-item">
+      <button class="accordion-button">Feeder &amp; Blind Access</button>
+      <div class="accordion-content">
+        <p>
+          Feeder and blind access work is designed to make it easier to get to and maintain your hunting setup.
+          We clear pathways and surrounding areas so you can safely reach feeders, blinds, and stand locations
+          without fighting thick brush every time you go in.
+        </p>
+        <p>
+          This service is especially useful for landowners who want smoother routes for refilling feeders,
+          checking cameras, getting equipment in and out, or just creating a cleaner, quieter way to approach
+          their hunting areas. Better access means less hassle and a more dependable setup all season long.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -168,6 +179,25 @@
   <footer>
     <p>&copy; 2026 Hunting Lane Clearing. All rights reserved.</p>
   </footer>
+
+  <script>
+    const buttons = document.querySelectorAll(".accordion-button");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const isOpen = content.style.display === "block";
+
+        document.querySelectorAll(".accordion-content").forEach((item) => {
+          item.style.display = "none";
+        });
+
+        if (!isOpen) {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
